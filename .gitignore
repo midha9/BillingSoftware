@@ -1,0 +1,62 @@
+# ===================== Frontend (React + Vite) =====================
+
+# Node modules and Vite build
+node_modules/
+dist/
+.vite/
+
+# Environment variables
+.env
+.env.*
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.sublime*
+*.psd
+*.thumb
+*.sketch
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# ===================== Backend (Spring Boot + Maven) =====================
+
+# Maven / Java build
+target/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Spring config (optional)
+src/main/resources/application.properties
+
+# STS (Spring Tool Suite)
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# IntelliJ
+*.iws
+*.iml
+*.ipr
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Logs and temporary files
+*.log
+*.out
+*.tmp
