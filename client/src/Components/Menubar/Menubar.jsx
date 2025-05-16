@@ -1,5 +1,6 @@
 import "./Menubar.css";
-import {assets} from "../../assets/assets.js";
+import { assets } from "../../assets/assets.js";
+import { Link } from "react-router-dom";
 
 const Menubar = () => {
     return (
@@ -15,26 +16,26 @@ const Menubar = () => {
                 <div className="collapse navbar-collapse p-2" id="navbarNav">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">Dashboard</a>
+                            <Link className="nav-link" to="/dashboard">Dashboard</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Explore</a>
+                            <Link className="nav-link" to="/explore">Explore</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Manage Items</a>
+                            <Link className="nav-link" to="/items">Manage Items</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Menage Categories</a>
+                            <Link className="nav-link" to="/category">Manage Categories</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Menage Users</a>
+                            <Link className="nav-link" to="/users">Manage Users</Link>
                         </li>
                     </ul>
-                    {/*Add the dropdown for user profile*/}
+                    {/* Add the dropdown for user profile */}
                 </div>
             </nav>
         </div>
     );
-}
+};
 
 export default Menubar;
